@@ -7,6 +7,7 @@ export class TodoList {
       this.todos = this.loadFromLocalStorage(); // LAddar från localstorage
     }
   
+    //Metod för att lägga till todo
     addTodo(task: string, priority: number): boolean {
       if (task && priority >= 1 && priority <= 3) {
         const newTodo: iTodoList = { task, completed: false, priority };
@@ -17,6 +18,7 @@ export class TodoList {
       return false;
     }
 
+    //Metod för att ta bort todo
     removeTodo(index: number): void {
       if (index >= 0 && index < this.todos.length) {
           this.todos.splice(index, 1); // Ta bort uppgiften från arrayen
@@ -24,6 +26,7 @@ export class TodoList {
       }
   }
   
+  //Metod för att markera som klar
     markTodoCompleted(todoIndex: number): void {
       if (todoIndex >= 0 && todoIndex < this.todos.length) {
         this.todos[todoIndex].completed = true;
@@ -31,14 +34,17 @@ export class TodoList {
       }
     }
   
+    //Metod för att returnera lista med todos
     getTodos(): iTodoList[] {
       return this.todos;
     }
   
+    //Metod för att spara till localstorage
     saveToLocalStorage(): void {
       localStorage.setItem('todos', JSON.stringify(this.todos));
     }
   
+    //Metod för att ladda från localstorage
     loadFromLocalStorage(): iTodoList[] {
       const storedTodos = localStorage.getItem('todos');
       return storedTodos ? JSON.parse(storedTodos) : [];
