@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     function showTodos() {
-        // Rensa container-elementet
+        // Rensa container-elementet om den finns
         if (todoContainer) {
             todoContainer.innerHTML = '';
         }
@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
                 todoDiv.appendChild(removeButton);
 
-                // Lägg till det nya div-elementet till container-elementet
+                // Lägg till det nya div-elementet till container-elementet om den finns
                 if (todoContainer) {
                     todoContainer.appendChild(todoDiv);
                 }
