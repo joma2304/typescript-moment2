@@ -16,6 +16,13 @@ export class TodoList {
       }
       return false;
     }
+
+    removeTodo(index: number): void {
+      if (index >= 0 && index < this.todos.length) {
+          this.todos.splice(index, 1); // Ta bort uppgiften från arrayen
+          this.saveToLocalStorage(); // Uppdatera lokal lagring
+      }
+  }
   
     markTodoCompleted(todoIndex: number): void {
       if (todoIndex >= 0 && todoIndex < this.todos.length) {
