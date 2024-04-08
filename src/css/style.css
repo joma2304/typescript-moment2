@@ -1,0 +1,79 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0 auto;
+    padding: none;
+}
+
+body {
+    min-height: 100vh;
+    background-color: rgb(229, 200, 240);
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20%;
+    padding-top: 10%;
+    margin-bottom: 10px;
+}
+
+.form-container {
+    width: 95%;
+    height: 95%;
+    max-width: 600px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 99px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+#form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#task {
+    padding: 20px;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+#priority {
+    padding: 5px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.addtask {
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-size: 1.2em;
+    background-color: rgb(114, 114, 192);
+    color: white;
+    margin-bottom: 10%;
+}
+
+.addtask:hover {
+    background-color: rgb(86, 86, 144);
+    ;
+}
+
+h2 {
+    padding-bottom: 10px;
+}
+
+.list-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 95%;
+    height: 95%;
+    max-width: 600px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 99px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}

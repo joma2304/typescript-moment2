@@ -1,11 +1,31 @@
 <!DOCTYPE html>
 <html lang="sv">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Todo List</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    
+    <div class="form-container">
+        <h1>Att göra lista</h1>
+        <form id="form">
+            <label for="task">Att göra:</label>
+            <input type="text" id="task" name="task" required>
+            <br>
+            <label for="priority">Prio (1-3):</label>
+            <input type="number" id="priority" name="priority" min="1" max="3" required>
+            <br>
+            <button class="addtask" type="submit">Lägg till</button>
+        </form>
+    </div>
+    <div class="list-container">
+        <h2>Min lista:</h2>
+        <ul id="todo-list"></ul>
+    </div>
+    <script src="js/main.ts" type="module"></script>
 </body>
+
 </html>
