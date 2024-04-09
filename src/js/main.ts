@@ -1,4 +1,4 @@
-import { TodoList } from "./classTodolist"; // Importera TodoList-klassen
+import { TodoList } from "classTodolist"; // Importera TodoList-klassen
 
 document.addEventListener('DOMContentLoaded', () => {
     const todoList = new TodoList(); // Skapa en ny TodoList
