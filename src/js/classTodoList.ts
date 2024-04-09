@@ -1,4 +1,4 @@
-import { iTodoList } from "iTodoList"
+import { iTodoList } from "./iTodoList"
 
 export class TodoList {
     private todos: iTodoList[]; //Tom array av objekten i todolist
