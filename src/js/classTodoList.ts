@@ -8,15 +8,16 @@ export class TodoList {
     }
   
     //Metod för att lägga till todo
-    addTodo(task: string, priority: number): boolean {
+    addTodo(task: string, priority: number): { success: boolean, message: string } {
       if (task && priority >= 1 && priority <= 3) {
-        const newTodo: iTodoList = { task, completed: false, priority };
-        this.todos.push(newTodo);
-        this.saveToLocalStorage();
-        return true;
+          const newTodo: iTodoList = { task, completed: false, priority };
+          this.todos.push(newTodo);
+          this.saveToLocalStorage();
+          return { success: true, message: "Att göra har lagts till." };
+      } else {
+          return { success: false, message: "Inmatade värden är fel." };
       }
-      return false;
-    }
+  }
 
     //Metod för att ta bort todo
     removeTodo(index: number): void {
